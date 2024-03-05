@@ -1,0 +1,56 @@
+*{
+    margin:0;/* establece los margenes externos en este caso no definido*/
+    padding: 0; /*establece los margenes internos no definidos*/
+    box-sizing: border-box; /*el tamaño de caja se va a mantener estable*/
+}
+
+body{ /*cuerpo de la pagina*/
+/*permite generar una imagen con un degradado de colores*/
+    background: linear-gradient(to right, #090136, #fff);
+    min-height: 100vh; /* 100% de la altura de la ventana gráfica o la altura completa de la pantalla.*/
+    display: flex; /*permite tener un comportamiento predecible y adaptable*/
+    justify-content: center; /*pone el contenido centrado*/
+    align-items: normal; /* controlan la alineación de nuestros elementos flexibles en el eje transversal*/
+    margin: 0; /* establece los margenes externos en este caso no definido*/
+
+}
+#video-background { 
+    position:fixed; /*hace que un elemento se coloque respecto al viewport*/
+    right: 0; /*especifica parte de la posición de un elemento*/
+    bottom: 0;/*establece la posición vertical de un elemento posicionado*/
+    min-width: 100%; /* determina la anchura mínima de un elemento*/
+    min-height: 100%;/* 100% de la altura de la ventana gráfica o la altura completa de la pantalla.*/
+    width: auto;/*establece el ancho de un elemento mediante un valor numérico */
+    height: auto;/*establece la altura de un elemento en una página web*/
+    z-index: -100; /*da superposición de un elemento sobre otro mediante capas*/
+    background-size: cover; /*cubre el área de posicionamiento de fondo*/
+    overflow: hidden; /*mostrará sólo el contenido que cabe dentro del contenedor y el resto no se ve*/
+}
+
+img{
+    width: 150px;/*establece el ancho de un elemento mediante un valor numérico */
+    height: 250px;/*establece la altura de un elemento en una página web*/
+    position:fixed;/*hace que un elemento se coloque respecto al viewport*/
+    justify-content: center;/*pone el contenido centrado*/
+    border-radius: 30px;/*bordes de la imagen*/
+    margin-top: 10cap;/*margen superior*/
+    margin-left: -10cap;/*margen izquierdo*/
+}
+
+.cuadrado{
+    width: 400px;/*establece el ancho de un elemento mediante un valor numérico */
+    height: 130px;/*establece la altura de un elemento en una página web*/
+    background-color: rgb(255,255,255,0);/*coloca un color de fondo*/
+    margin-top: 35cap;/*margen superior*/
+    margin-left: -20cap;/*margen izquierdo*/
+    position: fixed;/*hace que un elemento se coloque respecto al viewport*/
+    border-radius: 30px;/*bordes del cuadrado*/
+    border-style: dotted;/*permite establecer el estilo de algunos o todos los bordes de un elemento*/
+    justify-content:center;/*contenido centrado*/
+}
+
+h2{
+    text-align: center;/*texto alineado al centro*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;/*tipo de fuente*/
+
+}
